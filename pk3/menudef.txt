@@ -29,31 +29,31 @@
     Title "METROID: DREADNOUGHT - OPTIONS"
             StaticText      ""
             StaticText      "General Options", 1
-            Option "Doom-style Health Counter",      "metroid_cl_doomhealth", "OnOff"
-            Option "Doom-style Pickup System",       "metroid_cl_nometroidpickups", "OnOff"
-            Option "Projectile-based Beam Charging", "metroid_cl_custommissilecharge", "OnOff"
-            Option "Soulsphere Energy Tanks",        "metroid_soultanks", "OnOff"
-            Option "Enemy Item Drops Stay",          "metroid_dropstay", "OnOff"
-            Option "Enemy Item Drops Gravity",       "metroid_dropgravity", "OnOff"
+            Option "Doom-style Health Counter",      "met_cl_doomhealth", "OnOff"
+            Option "Doom-style Pickup System",       "met_cl_nometroidpickups", "OnOff"
+            Option "Projectile-based Beam Charging", "met_cl_custommissilecharge", "OnOff"
+            Option "Soulsphere Energy Tanks",        "met_soultanks", "OnOff"
+            Option "Enemy Item Drops Stay",          "met_dropstay", "OnOff"
+            Option "Enemy Item Drops Gravity",       "met_dropgravity", "OnOff"
             StaticText      ""
             StaticText      "Removal Options", 1
-            Option "No Particle Effects",            "metroid_cl_noeffects", "OnOff"
-            Option "No Warning Siren",               "metroid_cl_nosiren", "OnOff"
-            Option "No Morph Camera",                "metroid_cl_nomorphcamera", "OnOff"
-            Option "No Air Control",                 "metroid_noaircontrol", "OnOff"
-            Option "No BFG",                         "metroid_nobfg", "OnOff"
-            Option "No Morph Ball",                  "metroid_nomorph", "OnOff"
-            Option "No Enemy Item Drops",            "metroid_noenemydrops", "OnOff"
+            Option "No Particle Effects",            "met_cl_noeffects", "OnOff"
+            Option "No Warning Siren",               "met_cl_nosiren", "OnOff"
+            Option "No Morph Camera",                "met_cl_nomorphcamera", "OnOff"
+            Option "No Air Control",                 "met_noaircontrol", "OnOff"
+            Option "No BFG",                         "met_nobfg", "OnOff"
+            Option "No Morph Ball",                  "met_nomorph", "OnOff"
+            Option "No Enemy Item Drops",            "met_noenemydrops", "OnOff"
             StaticText      ""
             StaticText      "Cheat Options", 1
-            Option "Start With Space Jump",          "metroid_spacejump", "OnOff"
-            Option "Start With Weapons",             "metroid_loaded", "LoadedOptions"
-            Slider "Start With Energy Tanks",        "metroid_startingtanks", 0, 10, 1
-            Slider "How Many Jumps",                 "metroid_jumpcount", 2, 40, 2
+            Option "Start With Space Jump",          "met_spacejump", "OnOff"
+            Option "Start With Weapons",             "met_loaded", "LoadedOptions"
+            Slider "Start With Energy Tanks",        "met_startingtanks", 0, 10, 1
+            Slider "How Many Jumps",                 "met_jumpcount", 2, 40, 2
             StaticText      ""
             StaticText      "Misc Options", 1
-            Option "Skulltag Weapons",               "metroid_skulltagweapons", "SkulltagOptions"
-            Option "heroes live eternal",         "metroid_doomcannon", "OnOff"
+            Option "Skulltag Weapons",               "met_skulltagweapons", "SkulltagOptions"
+            Option "heroes live eternal",            "met_doomcannon", "OnOff"
     }
      
     OptionValue LoadedOptions

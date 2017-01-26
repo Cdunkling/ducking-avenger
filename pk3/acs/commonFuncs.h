@@ -824,7 +824,7 @@ function void saveCVar(int cvar, int val)
 {
     int setStr = StrParam(s:"set ", s:cvar, s:" ", d:val);
     int arcStr = StrParam(s:"archivecvar ", s:cvar);
-    ConsoleCommand(setStr); ConsoleCommand(arcStr);
+    //ConsoleCommand(setStr); ConsoleCommand(arcStr);
 }
 
 function int defaultCVar(int cvar, int defaultVal)

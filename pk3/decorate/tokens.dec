@@ -41,6 +41,10 @@ Actor MetroidHitIndicatorActive : Boolean {}
 Actor MetroidHitOpponent : Boolean {}
 actor WhyCantMetroidCrawl : Boolean {}
 actor CustomMissileCharge : Boolean {}
+actor IsOnTeam0 : Boolean {}
+actor IsOnTeam1 : Boolean {}
+actor IsOnTeam2 : Boolean {}
+actor IsOnTeam3 : Boolean {}
 
 actor HealthOver100 : Boolean {}
 actor HealthOver200 : Boolean {}

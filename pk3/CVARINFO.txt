@@ -1,40 +1,39 @@
 // Technically not needed, since Z& doesn't support it and this won't work in
 // ZDoom, but it's nice to have all the cvars in one place for reference.
 
-server noarchive int metroid_usescvarinfo = 819849666;
-server int metroid_runbefore = 0;
+server noarchive int met_usescvarinfo = 819849666;
+server int met_runbefore = 0;
 
 // Server cvars
-server int metroid_noaircontrol = 0;
-server int metroid_spacejump = 0;
-server int metroid_loaded = 0;
-server int metroid_startingtanks = 0;
-server int metroid_nolevellimiter = 1;
-server int metroid_jumpcount = 2;
-server int metroid_nomorph = 0;
-server int metroid_noenemydrops = 0;
-server int metroid_permabfg = 0;
-server int metroid_soultanks = 0;
-server int metroid_nobfg = 0;
-server int metroid_doomcannon = 0;
-server int metroid_dropstay = 0;
-server int metroid_skulltagweapons = 0;
-server int metroid_dropgravity = 0;
+server int met_noaircontrol = 0;
+server int met_spacejump = 0;
+server int met_loaded = 0;
+server int met_startingtanks = 0;
+server int met_nolevellimiter = 1;
+server int met_jumpcount = 2;
+server int met_nomorph = 0;
+server int met_noenemydrops = 0;
+server int met_permabfg = 0;
+server int met_soultanks = 0;
+server int met_nobfg = 0;
+server int met_doomcannon = 0;
+server int met_dropstay = 0;
+server int met_skulltagweapons = 0;
+server int met_dropgravity = 0;
 
 // Clientside cvars
 //  Still marked server for CVARINFO, since these are accessed from not-player scripts.
 //  No one plays this multiplayer in ZDoom, I hope.
 
-server int metroid_cl_runbefore = 0;
+user int met_cl_runbefore = 0;
 
-server int metroid_cl_noeffects = 0;
-server int metroid_cl_nosiren = 0;
-server int metroid_cl_nomorphcamera = 0;
-server int metroid_cl_doomhealth = 0;
-server int metroid_cl_nometroidpickups = 0;
-server int metroid_cl_hitindicator = 0;
-server int metroid_cl_chromabeamdensity = 8;
-server int metroid_cl_custommissilecharge = 0;
-server int metroid_cl_pickupmusic = 0;
-server int metroid_cl_pickupmusic = 0;
-server int metroid_cl_showallbeams = 0;
+user int met_cl_noeffects = 0;
+user int met_cl_nosiren = 0;
+user int met_cl_nomorphcamera = 0;
+user int met_cl_doomhealth = 0;
+user int met_cl_nometroidpickups = 0;
+user int met_cl_hitindicator = 0;
+user int met_cl_chromabeamdensity = 8;
+user int met_cl_custommissilecharge = 0;
+user int met_cl_pickupmusic = 0;
+user int met_cl_showallbeams = 0;

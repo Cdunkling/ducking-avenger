@@ -58,7 +58,7 @@ script METROID_SELECT_CLIENT (int onOff) clientside
     int actualBeams = 0;    // How many beams you actually have
     int pln  = PlayerNumber();
     int cpln = ConsolePlayerNumber();
-    int allspokes = GetCvar("metroid_cl_showallbeams");
+    int allspokes = GetCVar("met_cl_showallbeams");
     int time = 0;
     int i;
 

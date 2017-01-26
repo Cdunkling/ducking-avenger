@@ -1,5 +1,5 @@
-const int BT_ATTACK     = 1;
-const int BT_ALTATTACK  = 32;
+const int BTN_ATTACK     = 1;
+const int BTN_ALTATTACK  = 32;
 
 actor QuitParticlan:            Boolean {}
 
@@ -526,7 +526,7 @@ actor "Chroma Storm": Weapon
         MBEM H 0 A_JumpIfInventory("ChargeComboAcquired", 1, 1)
         goto RedShot2
         MBEM H 0 A_JumpIfInventory("DakkaBeamInChargeCombo", 1, "RedShot2")
-        MBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BT_ALTATTACK) >= 1, "ReadyCombo_Red")
+        MBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BTN_ALTATTACK) >= 1, "ReadyCombo_Red")
         goto RedShot2
 
       RedShot2:
@@ -593,7 +593,7 @@ actor "Chroma Storm": Weapon
         PBEM H 0 A_JumpIfInventory("ChargeComboAcquired", 1, 1)
         goto YellowShot2
         PBEM H 0 A_JumpIfInventory("DakkaBeamInChargeCombo", 1, "YellowShot2")
-        PBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BT_ALTATTACK) >= 1, "ReadyCombo_Yellow")
+        PBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BTN_ALTATTACK) >= 1, "ReadyCombo_Yellow")
         goto YellowShot2
 
       YellowShot2:
@@ -661,7 +661,7 @@ actor "Chroma Storm": Weapon
         SBEM H 0 A_JumpIfInventory("ChargeComboAcquired", 1, 1)
         goto GreenShot2
         SBEM H 0 A_JumpIfInventory("DakkaBeamInChargeCombo", 1, "GreenShot2")
-        SBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BT_ALTATTACK) >= 1, "ReadyCombo_Green")
+        SBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BTN_ALTATTACK) >= 1, "ReadyCombo_Green")
         goto GreenShot2
 
       GreenShot2:
@@ -728,7 +728,7 @@ actor "Chroma Storm": Weapon
         IBEM H 0 A_JumpIfInventory("ChargeComboAcquired", 1, 1)
         goto BlueShot2
         IBEM H 0 A_JumpIfInventory("DakkaBeamInChargeCombo", 1, "BlueShot2")
-        IBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BT_ALTATTACK) >= 1, "ReadyCombo_Blue")
+        IBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BTN_ALTATTACK) >= 1, "ReadyCombo_Blue")
         goto BlueShot2
 
       BlueShot2:
@@ -794,7 +794,7 @@ actor "Chroma Storm": Weapon
         WBEM H 0 A_JumpIfInventory("ChargeComboAcquired", 1, 1)
         goto PurpleShot2
         WBEM H 0 A_JumpIfInventory("DakkaBeamInChargeCombo", 1, "PurpleShot2")
-        WBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BT_ALTATTACK) >= 1, "ReadyCombo_Purple")
+        WBEM H 0 A_JumpIf(ACS_ExecuteWithResult(475, 0, 2, BTN_ALTATTACK) >= 1, "ReadyCombo_Purple")
         goto PurpleShot2
 
       PurpleShot2:
