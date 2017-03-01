@@ -1,6 +1,6 @@
 script 474 (int which, int transferVelocity, int count) clientside
 {
-    if (M_GetCVar("metroid_cl_noeffects")) { terminate; } // ramon pls
+    if (M_GetCVar("met_cl_noeffects")) { terminate; } // ramon pls
     if (which < 0 || which >= PARTICLECOUNT) { terminate; }
     int particle = DakkaBeamParticles[which];
     int fadeRate = DakkaBeamFadeRates[which];
@@ -359,8 +359,8 @@ script 487 (void) clientside
     for (i = 0; i < 9; i++) { Hack_ArgsSet[i] = 0; }
 
     int pln = PlayerNumber();
-    int noeffects = M_GetCVar("metroid_cl_noeffects");
-    int density   = middle(1, M_GetCVar("metroid_cl_chromabeamdensity"), 32);
+    int noeffects = M_GetCVar("met_cl_noeffects");
+    int density   = middle(1, M_GetCVar("met_cl_chromabeamdensity"), 32);
 
     int  x  = Hack_StartX,  y  = Hack_StartY,  z  = Hack_StartZ;
     int tx  = Hack_EndX,   ty  = Hack_EndY,   tz  = Hack_EndZ;

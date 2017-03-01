@@ -6,7 +6,14 @@ InInventory MetroidHitOpponent, 1 { drawimage "ENEMYHIT", 0, 0; }
 InInventory not BorphMallAcquired, 1
     {
     drawimage "samvisor", 0, 0;
-    GameMode Teamplay, TeamGame, OneFlagCTF, CTF, Skulltag, TeamLMS, TeamPossession { drawimage translatable "samvisoc", 0, 0; }
+    GameMode Teamplay, TeamGame, OneFlagCTF, CTF, Skulltag, TeamLMS, TeamPossession
+    {
+        //drawimage translatable "samvisoc", 0, 0;
+        InInventory IsOnTeam0, 1 { drawimage "samviso0", 0, 0; }
+        InInventory IsOnTeam1, 1 { drawimage "samviso1", 0, 0; }
+        InInventory IsOnTeam2, 1 { drawimage "samviso2", 0, 0; }
+        InInventory IsOnTeam3, 1 { drawimage "samviso3", 0, 0; }
+    }
     InInventory not DoomHealthCounter, 1 { drawnumber 2, METHUDF, Untranslated, PlayerTotalHealth, fillzeros, 97, 25; }
     InInventory DoomHealthCounter, 1 { drawnumber 4, METHUDF, Untranslated, Health, 97, 25; }
     drawbar "SAMHFULL", "SAMHEMPT", Health Health100, horizontal, 100, 24, 1;

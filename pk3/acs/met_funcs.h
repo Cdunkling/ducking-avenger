@@ -185,10 +185,10 @@ function void Lunge(int force)
 
 function int MetroidClientVars(void)
 {
-    int custmischarg      = !!GetCVar("metroid_cl_custommissilecharge");
-    int hitindic          = !!GetCVar("metroid_cl_hitindicator");
-    int metpick           = !!GetCVar("metroid_cl_nometroidpickups");
-    int doomHealth        = !!GetCVar("metroid_cl_doomhealth");
+    int custmischarg      = !!GetCVar("met_cl_custommissilecharge");
+    int hitindic          = !!GetCVar("met_cl_hitindicator");
+    int metpick           = !!GetCVar("met_cl_nometroidpickups");
+    int doomHealth        = !!GetCVar("met_cl_doomhealth");
     int runrunruu         = !!GetCVar("cl_run");
 
     return (custmischarg << 4) + (hitindic << 3) + (metpick << 2) + (doomHealth << 1) + runrunruu;
@@ -333,32 +333,32 @@ function int SetChasecam(int dist, int height, int tid, int withvel)
 
 function int met_cvarinfo(void)
 {
-    return GetCVar("metroid_usescvarinfo") == 819849666;
+    return GetCVar("met_usescvarinfo") == 819849666;
 }
 
 function int M_GetCVar(int var)
 {
-    if (met_cvarinfo()) { return GetCVar(var); }
-    return defaultCVar(var, 0);
+    /*if (met_cvarinfo()) { */return GetCVar(var); //}
+    //return defaultCVar(var, 0);
 }
 
 function int M_GetCVarFixed(int var)
 {
-    if (met_cvarinfo()) { return GetCVar(var); }
-    return Zand_GetCVarFixed(var);
+    /*if (met_cvarinfo()) { */return GetCVar(var); //}
+    //return Zand_GetCVarFixed(var);
 }
 
 function int M_DefaultCVar(int var, int val)
 {
-    if (met_cvarinfo()) { return GetCVar(var); }
-    return defaultCVar(var, val);
+    /*if (met_cvarinfo()) { */return GetCVar(var); //}
+    //return defaultCVar(var, val);
 }
 
 function int M_SetCVar(int var, int val)
 {
     if (GetCVar(var) == val) { return val; }
     if (met_cvarinfo()) { SetCVar(var, val); }
-    else { SaveCVar(var, val); }
+    //else { SaveCVar(var, val); }
 
     return GetCVar(var);
 }
@@ -366,14 +366,14 @@ function int M_SetCVar(int var, int val)
 function int M_SetCVar_ZandOnly(int var, int val)
 {
     if (GetCVar(var) == val) { return val; }
-    if (!met_cvarinfo()) { SaveCVar(var, val); }
+    if (!met_cvarinfo()) { }//SaveCVar(var, val); }
     return GetCVar(var);
 }
 
 function void M_RemoveCVar(int var)
 {
     if (met_cvarinfo()) { SetCVar(var, 0); } // can't actually remove cvars in zdoom
-    else { ConsoleCommand(StrParam(s:"unset ", s:var)); }
+    //else { ConsoleCommand(StrParam(s:"unset ", s:var)); }
 }
 
 
@@ -413,7 +413,7 @@ function int chooseMessage(int index, int domore)
     int count = 0;
     int i, msg;
 
-    if (!GetCVar("metroid_cl_moremessages") || !domore)
+    if (!GetCVar("met_cl_moremessages") || !domore)
     {
         int maybeRet = MetroidPickupMessages[index][0];
         if (StrLen(msg)) { ret = maybeRet; }

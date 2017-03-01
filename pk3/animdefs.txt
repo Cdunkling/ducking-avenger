@@ -5,3 +5,24 @@ pic 3 tics 6
 pic 4 tics 6
 
 Warp Texture HPROCRTQ
+
+WARP2 flat WATER_0
+
+texture WATERF_0
+pic WATERF_0 tics 4
+pic WATERF_1 tics 4
+pic WATERF_2 tics 4
+pic WATERF_3 tics 4
+
+animateddoor DORC_0
+	opensound DoorOpenLargeMetal
+	closesound DoorCloseLargeMetal
+	pic DORC_0
+	pic DORC_1
+	pic DORC_2
+	pic DORC_3
+	pic DORC_4 
+	pic DORC_5
+	pic DORC_6
+	pic DORC_7
+	pic DORC_8
